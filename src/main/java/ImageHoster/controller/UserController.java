@@ -49,7 +49,7 @@ public class UserController {
             UserProfile profile = new UserProfile();
             user.setProfile(profile);
             model.addAttribute("User", user);
-            String error = "Password must contain atleast 1 alphabet, 1 number & 1 special character";
+            String error = "Password must contain atleast 2 alphabet, 1 number & 1 special character";
             model.addAttribute("passwordTypeError", error);
             return "users/registration";
         }
